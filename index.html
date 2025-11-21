@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cynthia Tianxin Wang | PhD Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --primary-color: #00356B; /* Columbia Blue-ish */
+            --accent-color: #800000; /* Nod to UChicago Maroon */
+            --text-color: #333;
+            --bg-light: #f9f9f9;
+            --white: #ffffff;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-main); color: var(--text-color); line-height: 1.6; background-color: var(--bg-light); }
+        a { text-decoration: none; color: var(--primary-color); transition: 0.3s; }
+        a:hover { color: var(--accent-color); }
+
+        /* --- LAYOUT --- */
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; background: var(--white); box-shadow: 0 0 20px rgba(0,0,0,0.05); min-height: 100vh; }
+        
+        /* --- HEADER & HERO --- */
+        header { text-align: center; padding: 40px 20px; border-bottom: 1px solid #eee; }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--white);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+        h1 { font-size: 2.2rem; margin-bottom: 5px; color: var(--primary-color); }
+        .subtitle { font-size: 1.1rem; color: #666; font-weight: 400; }
+        
+        .social-links { margin-top: 15px; }
+        .social-links a { margin: 0 10px; font-size: 1.2rem; color: #555; }
+        .social-links a:hover { color: var(--primary-color); }
+
+        /* --- SECTIONS --- */
+        section { padding: 40px 20px; border-bottom: 1px solid #eee; }
+        section:last-child { border-bottom: none; }
+        
+        h2 { 
+            font-size: 1.5rem; 
+            margin-bottom: 25px; 
+            color: var(--primary-color); 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        /* --- CONTENT STYLES --- */
+        .bio-text { max-width: 700px; margin: 0 auto; text-align: justify; }
+        
+        .entry { margin-bottom: 25px; }
+        .entry-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .entry-title { font-weight: bold; font-size: 1.1rem; color: #222; }
+        .entry-date { font-size: 0.9rem; color: #888; }
+        .entry-subtitle { font-style: italic; color: #555; margin-bottom: 8px; display: block; }
+        
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .skill-box h3 { font-size: 1rem; color: var(--accent-color); margin-bottom: 10px; }
+        .tag { display: inline-block; background: #eee; padding: 4px 10px; border-radius: 15px; font-size: 0.85rem; margin: 0 5px 5px 0; }
+
+        .pub-item { padding-left: 15px; border-left: 2px solid #ddd; }
+
+        /* --- FOOTER --- */
+        footer { text-align: center; padding: 30px; font-size: 0.9rem; color: #888; margin-top: 20px; }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            .entry-header { flex-direction: column; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <img src="personal_webpage_photo.jpg" alt="Cynthia Tianxin Wang" class="profile-img">
+            <h1>Cynthia Tianxin Wang</h1>
+            <div class="subtitle">PhD Student in Systems Biology at Columbia University</div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/cynthia-wang-69423b1aa/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:tw3056@cumc.columbia.edu"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </header>
+
+        <!-- ABOUT -->
+        <section>
+            <h2>About Me</h2>
+            <div class="bio-text">
+                <p>
+                    I am a PhD student in the <strong>Integrated Program in Cellular and Biomedical Sciences</strong> at Columbia University Irving Medical Center, specializing in <strong>Systems Biology</strong> under the advisement of <a href="https://califano.c2b2.columbia.edu/" target="_blank">Dr. Andrea Califano</a>.
+                </p>
+                <br>
+                <p>
+                    Prior to joining Columbia, I earned my B.S. in Biological Sciences with a minor in Computer Science from the <strong>University of Chicago</strong>, where I conducted research with <a href="https://biochem.uchicago.edu/faculty/tao-pan-phd" target="_blank">Dr. Tao Pan</a> and <a href="https://ecologyandevolution.uchicago.edu/faculty/matthias-steinruecken-phd" target="_blank">Dr. Matthias Steinruecken</a>. 
+                </p>
+                <br>
+                <p>
+                    My research lies at the intersection of wet-lab experimentation and computational analysis. I am passionate about utilizing functional genomics, high-dimensional statistics, and probabilistic modeling to understand tumor heterogeneity and gene regulatory networks.
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>Education</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Columbia University Irving Medical Center</span>
+                    <span class="entry-date">2024 – Present (Exp. 2029)</span>
+                </div>
+                <span class="entry-subtitle">PhD in Integrated Program in Cellular and Biomedical Sciences</span>
+                <ul>
+                    <li>Concentration: Systems Biology</li>
+                    <li>Adviser: Andrea Califano</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">The University of Chicago</span>
+                    <span class="entry-date">2020 – 2024</span>
+                </div>
+                <span class="entry-subtitle">B.S. in Biological Sciences, Minor in Computer Science</span>
+                <ul>
+                    <li>Awards: Quad Undergraduate Research Scholars Program (2023-2024), Biological Sciences Collegiate Division Genetics and Genomics Fellowship (2023), Leakey Foundation Grant (2023).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- RESEARCH -->
+        <section>
+            <h2>Selected Research</h2>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Protein Activity-based Single-cell Analysis in DSRCT</span>
+                    <span class="entry-date">Columbia University (Califano Lab)</span>
+                </div>
+                <p>
+                    Conducting integrative analysis of single-cell RNA sequencing datasets from Desmoplastic Small Round Cell Tumor (DSRCT) patients. Utilizing deep generative modeling (scVI) and ARACNe/VIPER to infer gene regulatory networks and identify shared tumor sub-states.
+                </p>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Engineering Mischarged Transfer RNAs</span>
+                    <span class="entry-date">University of Chicago (Tao Pan Lab)</span>
+                </div>
+                <p>
+                    Facilitated the development of engineered missense-correcting tRNA (mc-tRNA) as potential therapeutics for pathogenic mutations. Investigated whether cis-regulatory elements exist around tRNA genes via truncation experiments.
+                </p>
+            </div>
+        </section>
+
+        <!-- PUBLICATIONS -->
+        <section>
+            <h2>Publications</h2>
+            <div class="pub-item">
+                <p>
+                    Hou, Y., Zhang, W., McGilvray, P. T., Sobczyk, M., <strong>Wang, T.</strong>, ... & Pan, T. (2024). <a href="https://doi.org/10.1016/j.ymthe.2023.12.014" target="_blank">Engineered mischarged transfer RNAs for correcting pathogenic missense mutations.</a> <em>Molecular Therapy</em>, 32(2), 352–371.
+                </p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3><i class="fas fa-dna"></i> Wet Lab</h3>
+                    <span class="tag">CRISPR-Cas9</span>
+                    <span class="tag">DNA/RNA Extraction</span>
+                    <span class="tag">Cell Culture</span>
+                    <span class="tag">Flow Cytometry</span>
+                    <span class="tag">RT-qPCR</span>
+                </div>
+                <div class="skill-box">
+                    <h3><i class="fas fa-laptop-code"></i> Computational</h3>
+                    <span class="tag">Python (Pandas, Scanpy, PyTorch)</span>
+                    <span class="tag">R (Seurat, VIPER, Monocle3)</span>
+                    <span class="tag">MATLAB</span>
+                    <span class="tag">Linux/Git</span>
+                    <span class="tag">scRNA-seq Analysis</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Deep Learning</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2025 Cynthia Tianxin Wang. Built with simple HTML/CSS.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
